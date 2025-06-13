@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ganpati Idol - Quick Buy</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .product-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    h2, p.price {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .price {
+      font-size: 20px;
+      color: green;
+      font-weight: bold;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .dual-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .dual-buttons button {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container flex">
+    <div class="">
+      <img src="https://scontent.fnag10-1.fna.fbcdn.net/v/t39.30808-6/485017529_1264665015223035_8323821877888389402_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xwaFivmpQkQQ7kNvwFT3wSc&_nc_oc=AdlQ8ikZCFiw_NSCh5Ujr3Hx7UMBrPENNpHjAnzrK1ZNtdT0FD_G1jqNk7yIl_Msrh5dz0Bk61H2Tn6zFhgXkkWw&_nc_zt=23&_nc_ht=scontent.fnag10-1.fna&_nc_gid=bRYiR7VHZmE1EYxYIvsKFg&oh=00_AfOoHqNoLhHiCLeHyqBqUIDMNmzJ30otPfQvNyzJiyLZHg&oe=685193A0" alt="Ganpati Idol" class="product-img">
+
+      <h2>Divine Ganpati Idol</h2>
+      <p class="price">₹499 Only</p>
+    </div>
+
+    <form id="orderForm" action="https://formsubmit.co/vedantwedekar@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="address" placeholder="Complete Address" required></textarea>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="number" name="quantity" value="1" min="1" placeholder="Quantity" required>
+      <textarea name="note" placeholder="Note (Optional)"></textarea>
+
+      <!-- Hidden settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="New Ganpati Order">
+      <input type="hidden" name="_next" value="https://thankyoupage.com"> <!-- optional -->
+
+      <div class="dual-buttons">
+        <button type="button" onclick="sendToWhatsApp()">Send to WhatsApp</button>
+        <button type="submit">Send to Email</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function sendToWhatsApp() {
+      const form = document.getElementById("orderForm");
+      const name = form.name.value.trim();
+      const address = form.address.value.trim();
+      const phone = form.phone.value.trim();
+      const quantity = form.quantity.value;
+      const note = form.note.value.trim();
+
+      const message = `🛒 New Ganpati Idol Order%0A%0A👤 Name: ${name}%0A🏡 Address: ${address}%0A📞 Phone: ${phone}%0A📦 Quantity: ${quantity}%0A📝 Note: ${note || 'N/A'}%0A💰 Price: ₹${quantity * 499}`;
+
+      const whatsappNumber = "919325255759"; // Your number
+      const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>

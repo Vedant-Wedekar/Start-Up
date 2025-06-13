@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Buy - Product Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      background: #fff;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .dual-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .dual-buttons button {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>🛒 Order Product: Divine Ganpati Idol</h2>
+
+    <form id="orderForm" action="https://formsubmit.co/vedantwedekar@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <textarea name="address" placeholder="Complete Address" required></textarea>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="number" name="quantity" placeholder="Quantity" value="1" min="1" required>
+      <textarea name="note" placeholder="Any Notes (Optional)"></textarea>
+
+      <!-- Hidden FormSubmit settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://thankyou-page.com"> <!-- Optional: Redirect after submission -->
+
+      <div class="dual-buttons">
+        <button type="button" onclick="sendToWhatsApp()">Send to WhatsApp</button>
+        <button type="submit">Send to Email</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function sendToWhatsApp() {
+      const form = document.getElementById("orderForm");
+      const name = form.name.value.trim();
+      const address = form.address.value.trim();
+      const phone = form.phone.value.trim();
+      const quantity = form.quantity.value;
+      const note = form.note.value.trim();
+
+      if (!name || !address || !phone || !quantity) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      const message = `New Ganpati Idol Order%0A%0A🧑 Name: ${name}%0A🏡 Address: ${address}%0A📞 Phone: ${phone}%0A📦 Quantity: ${quantity}%0A📝 Note: ${note || 'N/A'}`;
+
+      const whatsappNumber = "919325255759"; // Your number with country code
+      const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
