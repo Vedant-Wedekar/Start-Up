@@ -12,7 +12,7 @@ import k from './assets/k.png';
 const App = () => {
   return (
     <div className='bg-black min-h-screen w-full px-4 pb-10'>
-      
+
       {/* Header */}
       <div className="flex justify-between items-center py-6">
         <IoReorderTwoOutline className="text-white text-2xl sm:text-3xl" />
@@ -51,6 +51,20 @@ const App = () => {
       {/* Buy Button */}
       <div className="bg-white w-full sm:w-60 mx-auto text-center py-2 rounded-2xl font-bold mt-6 cursor-pointer hover:bg-gray-200 transition">
         Buy It Now
+      </div>
+
+      {/* Product Info */}
+      <div className="bg-[#1d1d1f] text-white mt-6 p-4 rounded-xl text-sm leading-6">
+        <h3 className="text-lg font-bold mb-2">Product Information</h3>
+        <p><strong>Name:</strong> Design juice and drinks glass can cup tumbler Sipper bottle with bamboo lid and straw for daily use, 540ml</p>
+        <p><strong>Material:</strong> Glass</p>
+        <p><strong>Type:</strong> Tumbler</p>
+        <p><strong>Product Breadth:</strong> 3 Inch</p>
+        <p><strong>Product Height:</strong> 5 Inch</p>
+        <p><strong>Product Length:</strong> 5 Inch</p>
+        <p><strong>Net Quantity (N):</strong> Pack Of 1</p>
+        <p><strong>Description:</strong> Unique design juice and drinks glass can cup tumbler Sipper bottle with bamboo lid and straw for daily use, 540ml</p>
+        <p><strong>Country of Origin:</strong> India</p>
       </div>
 
       {/* Decorative Image */}
