@@ -77,7 +77,7 @@ const App = () => {
       <h3 className="text-white text-xl mt-8">FOLLOW US</h3>
       <p className="text-white text-sm mt-2">Stay updated with our latest products and offers by following us on social media.</p>
 
-      <p className="text-white text-xs mt-10 text-center">© 2023 Daisy Whispers. All rights reserved.</p>
+      <p className="text-white text-xs mt-10 text-center">© 2025 Daisy Whispers. All rights reserved.</p>
     </div>
   )
 }
