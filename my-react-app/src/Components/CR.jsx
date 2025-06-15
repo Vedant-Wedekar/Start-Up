@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import D from '../Assets/D.jpg'; // Assuming D.png is the product image
+import S from '../Assets/S.png'; // Assuming S.png is the success image
 const CR = () => {
   const [form, setForm] = useState({
     email: '',
@@ -33,7 +34,7 @@ const CR = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-white via-blue-50 to-white p-4 font-sans">
-      <h1 className="text-3xl font-bold text-center text-blue-800 mb-8">GenZ CLOTHING</h1>
+      <h1 className="text-3xl font-bold text-center text-blue-800 mb-8">GenZ Cart</h1>
       <form
         action="https://formsubmit.co/vedantwedekar@gmail.com"
         method="POST"
@@ -99,10 +100,36 @@ const CR = () => {
               onChange={handleChange}
               className="p-3 border rounded"
             >
-              <option>Maharashtra</option>
-              <option>Delhi</option>
-              <option>Gujarat</option>
-              <option>Karnataka</option>
+             <option>Maharashtra</option>
+<option>Karnataka</option>
+<option>Delhi</option>
+<option>Tamil Nadu</option>
+<option>Gujarat</option>
+<option>Telangana</option>
+<option>Uttar Pradesh</option>
+<option>Haryana</option>
+<option>West Bengal</option>
+<option>Rajasthan</option>
+<option>Madhya Pradesh</option>
+<option>Punjab</option>
+<option>Andhra Pradesh</option>
+<option>Kerala</option>
+<option>Bihar</option>
+<option>Odisha</option>
+<option>Chhattisgarh</option>
+<option>Jharkhand</option>
+<option>Uttarakhand</option>
+<option>Assam</option>
+<option>Goa</option>
+<option>Himachal Pradesh</option>
+<option>Tripura</option>
+<option>Manipur</option>
+<option>Meghalaya</option>
+<option>Nagaland</option>
+<option>Mizoram</option>
+<option>Arunachal Pradesh</option>
+<option>Sikkim</option>
+
             </select>
             <input
               name="zip"
@@ -134,13 +161,13 @@ const CR = () => {
           <h3 className="font-semibold mb-2">Order Summary</h3>
           <div className="flex items-center gap-3 mb-4">
             <img
-              src="https://i.ibb.co/x8RCzFy/shirt.jpg"
+              src={D}
               alt="product"
               className="w-16 h-20 rounded"
             />
             <div>
-              <p className="font-medium">Astroworld OG T-shirt</p>
-              <p className="text-sm text-gray-500">Size: S</p>
+              <p className="font-medium">🌼 Daisy Whispers Jar</p>
+              <p className="text-sm text-gray-500">Size: M</p>
             </div>
             <span className="ml-auto font-semibold">₹799</span>
           </div>
@@ -150,12 +177,16 @@ const CR = () => {
               <span>₹799.00</span>
             </div>
             <div className="flex justify-between">
-              <span>Estimated Taxes</span>
-              <span>₹39.95</span>
+              <span>Delivery Charges</span>
+              <span>₹00.00</span>
+            </div>
+                <div className="flex justify-between">
+              <span>Estimated Tax</span>
+              <span>₹00.00</span>
             </div>
             <div className="border-t pt-2 flex justify-between font-bold">
               <span>Total</span>
-              <span>₹838.95</span>
+              <span>₹799.00</span>
             </div>
           </div>
 
@@ -168,6 +199,8 @@ const CR = () => {
               ✉️ Place Order via Email
             </button>
           </div>
+          <div className="text-xs text-gray-900 mt-4">After placing your order by clicking the ✉️ Place Order via Email button, if a confirmation screen appears, it means your order has been successfully placed.</div>
+       <div className="">  <img src={S} ></img></div> 
         </div>
       </form>
     </div>
