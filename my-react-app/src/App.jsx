@@ -9,7 +9,7 @@ import D from './assets/D.jpg';
 import { FaStar } from "react-icons/fa";
 import k from './assets/k.png';
 import { useNavigate } from 'react-router-dom';
-
+import LO from './assets/L.png'; // Assuming LO is the logo image
 const App = () => {
     const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ const App = () => {
       <div className="flex justify-between items-center py-6">
         <IoReorderTwoOutline className="text-white text-2xl sm:text-3xl" />
         <IoIosSearch className="text-white text-2xl sm:text-3xl" />
-        <img src={C} alt="CV" className='w-12 h-10 rounded-full' />
+        <img src={LO} alt="CV" className='w-12 h-7 ' />
         <CgProfile className="text-white text-2xl sm:text-3xl" />
         <IoBagOutline className="text-white text-2xl sm:text-3xl" />
       </div>
@@ -54,6 +54,11 @@ const App = () => {
         Delicate 🍃, dreamy ☁️, and effortlessly charming 🌼 — our Daisy Whispers Jar is more than just a container. It’s a little piece of spring you can hold in your hand 🌷.
       </p>
 
+      {/* Price */}
+     <div className="text-white text-2xl sm:text-3xl font-bold mt-6">
+  <span className="line-through text-gray-400 mr-2">₹1999</span>
+  <span className="text-white">₹799 Only</span>
+</div>
       {/* Buy Button */}
       <div  onClick={handleBuyClick} className="bg-white w-full sm:w-60 mx-auto text-center py-2 rounded-2xl font-bold mt-6 cursor-pointer hover:bg-gray-200 transition">
         Buy It Now
@@ -78,7 +83,8 @@ const App = () => {
 
       {/* Contact Section */}
       <h3 className="text-white text-xl mt-10">CONTACT US</h3>
-      <p className="text-white text-sm mt-2">For any inquiries, please reach out to us at support@example.com</p>
+      <p className="text-white text-sm mt-2">For any inquiries, please reach out to us at support@daisywhispers.com</p>
+     <div className=" text-white text-sm"> INSTAGRAM --- <a href='' className="text-gray-400 text-sm"> GENZ CART</a></div>
 
       <h3 className="text-white text-xl mt-8">FOLLOW US</h3>
       <p className="text-white text-sm mt-2">Stay updated with our latest products and offers by following us on social media.</p>

@@ -100,7 +100,7 @@ const CR = () => {
               onChange={handleChange}
               className="p-3 border rounded"
             >
-             <option>Maharashtra</option>
+<option>Maharashtra</option>
 <option>Karnataka</option>
 <option>Delhi</option>
 <option>Tamil Nadu</option>
