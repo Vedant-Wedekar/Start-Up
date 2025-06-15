@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import D from '../Assets/D.jpg'; // Assuming D.png is the product image
-import S from '../Assets/S.png'; // Assuming S.png is the success image
+import D from '../assets/D.jpg'; // Assuming D.png is the product image
+import S from '../assets/S.png'; // Assuming S.png is the success image
 const CR = () => {
   const [form, setForm] = useState({
     email: '',
