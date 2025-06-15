@@ -20,11 +20,11 @@ export default function OrderConfirmation({ show, onClose }) {
     <AnimatePresence>
       {show && (
         <motion.div
-          initial={{ scale: 0.7, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0.7, opacity: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="fixed top-1/4 left-1/2 transform -translate-x-1/2 z-50 bg-green-600 text-white px-8 py-4 rounded-xl shadow-lg text-xl font-semibold"
+          className="fixed inset-0 z-50 bg-green-600 bg-opacity-90 flex items-center justify-center text-white text-3xl font-bold"
         >
           ✅ Order Confirmed!
         </motion.div>
