@@ -35,7 +35,7 @@ const CR = () => {
     formData.append("_autoresponse", "Thank you! We’ve received your order.");
 
     try {
-      const response = await fetch("https://formsubmit.co/genzkart.in@gmail.com", {
+       const response = await fetch("https://formsubmit.co/genzkart.in@gmail.com", {
         method: "POST",
         body: formData,
       });
