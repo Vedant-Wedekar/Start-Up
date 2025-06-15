@@ -9,7 +9,7 @@ const CR = () => {
     firstName: "",
     lastName: "",
     city: "",
-    state: "Maharashtra",
+    state: "",
     zip: "",
     phone: "",
     payment: "",
@@ -80,12 +80,46 @@ const CR = () => {
           <div className="grid sm:grid-cols-3 gap-4">
             <input name="city" placeholder="City" onChange={handleChange} value={form.city} className="p-3 border rounded" />
             <select name="state" value={form.state} onChange={handleChange} className="p-3 border rounded">
-              <option>Maharashtra</option>
-              <option>Karnataka</option>
-              <option>Delhi</option>
-              <option>Gujarat</option>
-              <option>Tamil Nadu</option>
-              <option>Others</option>
+            <option>Chandigarh</option>
+<option>Goa</option>
+<option>Dadra and Nagar Haveli and Daman and Diu</option>
+<option>Karnataka</option>
+<option>Maharashtra</option>
+<option>Tamil Nadu</option>
+<option>Delhi</option>
+<option>Andhra Pradesh</option>
+<option>Telangana</option>
+<option>Uttar Pradesh</option>
+<option>Bihar</option>
+<option>Gujarat</option>
+<option>West Bengal</option>
+<option>Kerala</option>
+<option>Punjab</option>
+<option>Rajasthan</option>
+<option>Haryana</option>
+<option>Madhya Pradesh</option>
+<option>Odisha</option>
+<option>Jharkhand</option>
+<option>Chhattisgarh</option>
+<option>Assam</option>
+<option>Uttarakhand</option>
+<option>Himachal Pradesh</option>
+<option>Jammu and Kashmir</option>
+<option>Tripura</option>
+<option>Manipur</option>
+<option>Meghalaya</option>
+<option>Arunachal Pradesh</option>
+<option>Nagaland</option>
+<option>Mizoram</option>
+<option>Sikkim</option>
+<option>Andaman and Nicobar Islands</option>
+<option>Lakshadweep</option>
+<option>Puducherry</option>
+ <option>Chandigarh</option>
+<option>Goa</option>
+<option>Dadra and Nagar Haveli and Daman and Diu</option>
+<option>Others</option>
+
             </select>
             <input name="zip" placeholder="PIN Code" onChange={handleChange} value={form.zip} className="p-3 border rounded" />
           </div>
