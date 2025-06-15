@@ -35,7 +35,7 @@ const CR = () => {
     formData.append("_autoresponse", "Thank you! We’ve received your order.");
 
     try {
-      const response = await fetch("https://formsubmit.co/vedantwedekar@gmail.com", {
+      const response = await fetch("https://formsubmit.co/genzkart.in@gmail.com", {
         method: "POST",
         body: formData,
       });
@@ -106,13 +106,13 @@ const CR = () => {
               <p className="font-medium">🌼 Daisy Whispers Jar</p>
               <p className="text-sm text-gray-500">Size: M</p>
             </div>
-            <span className="ml-auto font-semibold">₹799</span>
+            <span className="ml-auto font-semibold">₹499</span>
           </div>
           <div className="text-sm space-y-1 mb-4">
-            <div className="flex justify-between"><span>Subtotal</span><span>₹799.00</span></div>
+            <div className="flex justify-between"><span>Subtotal</span><span>₹499.00</span></div>
             <div className="flex justify-between"><span>Delivery Charges</span><span>₹0.00</span></div>
             <div className="flex justify-between"><span>Tax</span><span>₹0.00</span></div>
-            <div className="border-t pt-2 flex justify-between font-bold"><span>Total</span><span>₹799.00</span></div>
+            <div className="border-t pt-2 flex justify-between font-bold"><span>Total</span><span>₹499.00</span></div>
           </div>
           <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white p-3 rounded">✉️ Place Order via Email</button>
           <div className="text-xs text-gray-900 mt-4">

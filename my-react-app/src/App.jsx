@@ -57,7 +57,7 @@ const App = () => {
       {/* Price */}
      <div className="text-white text-2xl sm:text-3xl font-bold mt-6">
   <span className="line-through text-gray-400 mr-2">₹1999</span>
-  <span className="text-white">₹799 Only</span>
+  <span className="text-white">₹499 Only</span>
 </div>
       {/* Buy Button */}
       <div  onClick={handleBuyClick} className="bg-white w-full sm:w-60 mx-auto text-center py-2 rounded-2xl font-bold mt-6 cursor-pointer hover:bg-gray-200 transition">
@@ -83,8 +83,8 @@ const App = () => {
 
       {/* Contact Section */}
       <h3 className="text-white text-xl mt-10">CONTACT US</h3>
-      <p className="text-white text-sm mt-2">For any inquiries, please reach out to us at support@daisywhispers.com</p>
-     <div className=" text-white text-sm"> INSTAGRAM --- <a href='' className="text-gray-400 text-sm"> GENZ CART</a></div>
+      <p className="text-white text-sm mt-2">For any inquiries, please reach out to us at genzkart.in@gmail.com</p>
+     <div className=" text-white text-sm"> INSTAGRAM --- <a href='https://www.instagram.com/genzkart.in/?hl=en' className="text-gray-400 text-sm"> GENZ KART</a></div>
 
       <h3 className="text-white text-xl mt-8">FOLLOW US</h3>
       <p className="text-white text-sm mt-2">Stay updated with our latest products and offers by following us on social media.</p>
