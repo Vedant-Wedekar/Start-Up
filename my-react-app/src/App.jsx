@@ -8,8 +8,14 @@ import F from './assets/f.jpg';
 import D from './assets/D.jpg';
 import { FaStar } from "react-icons/fa";
 import k from './assets/k.png';
+import { useNavigate } from 'react-router-dom';
 
 const App = () => {
+    const navigate = useNavigate();
+
+  const handleBuyClick = () => {
+    navigate('/buy'); // redirects to the Buy component
+  };
   return (
     <div className='bg-black min-h-screen w-full px-4 pb-10'>
 
@@ -49,7 +55,7 @@ const App = () => {
       </p>
 
       {/* Buy Button */}
-      <div className="bg-white w-full sm:w-60 mx-auto text-center py-2 rounded-2xl font-bold mt-6 cursor-pointer hover:bg-gray-200 transition">
+      <div  onClick={handleBuyClick} className="bg-white w-full sm:w-60 mx-auto text-center py-2 rounded-2xl font-bold mt-6 cursor-pointer hover:bg-gray-200 transition">
         Buy It Now
       </div>
 
