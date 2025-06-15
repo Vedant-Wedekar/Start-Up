@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import D from "../assets/D.jpg";
-import OrderConfirmation from "../components/OrderConfirmation";
+import OrderConfirmation from "../Components/OrderConfirmation";
 
 const CR = () => {
   const [form, setForm] = useState({
