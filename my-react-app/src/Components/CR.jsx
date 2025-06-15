@@ -80,7 +80,7 @@ const CR = () => {
           <div className="grid sm:grid-cols-3 gap-4">
             <input name="city" placeholder="City" onChange={handleChange} value={form.city} className="p-3 border rounded" />
             <select name="state" value={form.state} onChange={handleChange} className="p-3 border rounded">
-            <option>Chandigarh</option>
+<option>Chandigarh</option>
 <option>Goa</option>
 <option>Dadra and Nagar Haveli and Daman and Diu</option>
 <option>Karnataka</option>
